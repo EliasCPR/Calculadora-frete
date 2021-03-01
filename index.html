@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculo de Frete</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Calculo de Frete</h1>
+  </header>
+  <main class="container">
+    <form>
+      <label>
+        Cidade de Origem:
+        <input type="text" id="origem" require>
+      </label>
+  
+      <label>
+        Cidade de Destino:
+        <input type="text" id="destino" require>
+      </label>
+  
+      <label>
+        Distância em KM:
+        <input type="number" id="distancia" require>
+      </label>
+  
+      <label>
+        Quantidade de Pedágios:
+        <input type="number" id="pedagios" required>
+      </label>
+  
+      <input type="button" id="calcular" value="calcular">
+    </form>
+    <div class="resultado">
+      <div>
+        <span id="pedagio">R$ 0,0</span>
+        <span>Pedágios</span> 
+      </div>
+      <div>
+        <span id="total">R$ 0,0</span>
+        <span>Valor total</span> 
+      </div>
+      
+    </div>
+  </main>
+  <footer>
+    Prof. Fernando Leonid
+  </footer> 
+  <script src="main.js"></script> 
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --primary-color: #ffc600;
+  font-size: 14px;
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 75vw;
+    height: 350px;
+    margin: 10vh auto;
+    box-shadow: 0px 0px 10px  whitesmoke;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:var(--primary-color);
+    width: 50%;
+    height: 100%;
+    padding: 3vw;
+}
+
+
+.container label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+
+.container input {
+    height: 30px;
+    border-radius: 5px;
+    border:none;
+    outline: 0;
+    text-align: center;
+}
+
+.container #calcular {
+    width: 50%;
+    align-self: flex-end;
+    font-size: large;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;;
+}
+
+.container .resultado {
+    background-color: #ffc60020;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 5vw;
+    gap: 25px;   
+
+}
+.container .resultado div {
+    display: flex;
+    flex-direction: column;
+}
+.container .resultado div span {
+    text-align: right;
+}
+
+#pedagio, #total {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    font-weight:600;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: x-small;
+}
